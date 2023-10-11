@@ -1,8 +1,10 @@
-# React + Vite
+# Speech Recognition Maze
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses TensorFlow.js speech language modelling to allow users to speak into their microphone and guide the coloured square along the maze to the finishing line.
 
-Currently, two official plugins are available:
+Specifically, it builds upon:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [Google's Teachable Machine web-based tool](https://teachablemachine.withgoogle.com/) in order to quickly build a comparative language assessing model
+-   [Tailwind CSS](https://tailwindcss.com/) for styling
+-   [Vite.js](https://vitejs.dev/) for the development environment
+-   [Canvas confetti](https://github.com/catdad/canvas-confetti) as a third-party package used for extra UX
