@@ -59,7 +59,7 @@ function App() {
                 }, 3000);
         };
 
-        recognizer.listen(
+        recognizer.startStreaming(
             (result) => {
                 const scores = result.scores; // probability of prediction for each class
                 directionPrediction = findIndexOfLargestNumber(scores);
