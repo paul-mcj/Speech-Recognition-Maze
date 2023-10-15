@@ -40,7 +40,7 @@ function App() {
 
         const stopRecognizerAndUpdateMaze = (direction) => {
             setMicActiveListening(() => 2);
-            recognizer.stopStreaming();
+            recognizer.stopListening();
             const returnedMazeAndMessageObj = updateMaze(maze, "a", direction);
             setMaze(() => returnedMazeAndMessageObj.maze);
             setMessageObj(() => returnedMazeAndMessageObj);
@@ -59,7 +59,7 @@ function App() {
                 }, 3000);
         };
 
-        recognizer.startStreaming(
+        recognizer.listen(
             (result) => {
                 const scores = result.scores; // probability of prediction for each class
                 directionPrediction = findIndexOfLargestNumber(scores);
