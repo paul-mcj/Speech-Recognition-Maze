@@ -40,7 +40,7 @@ function App() {
 
         const stopRecognizerAndUpdateMaze = (direction) => {
             setMicActiveListening(() => 2);
-            recognizer.stopListening();
+            recognizer.stopStreaming();
             const returnedMazeAndMessageObj = updateMaze(maze, "a", direction);
             setMaze(() => returnedMazeAndMessageObj.maze);
             setMessageObj(() => returnedMazeAndMessageObj);
