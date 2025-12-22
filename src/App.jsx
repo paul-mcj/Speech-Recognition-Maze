@@ -106,7 +106,7 @@ function App() {
 
 	return (
 		<>
-			<div className="bg-gradient-to-b from-sky-100 to-sky-300 min-h-screen">
+			<div className="bg-gradient-to-b from-sky-100 to-sky-300 min-h-screen font-silkscreen">
 				<div className="p-8">
 					<h1 className="text-xl xsm:text-2xl sm:text-3xl lg:text-5xl mb-12 tablet:mb-24">
 						Speech Recognition Maze
